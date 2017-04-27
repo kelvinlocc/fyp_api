@@ -1,0 +1,46 @@
+{
+  "name": "Shop",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "shop_id": {
+      "type": "string",
+      "required": true
+    },
+    "shop_name": {
+      "type": "string",
+      "required": true
+    },
+    "opening_hours": {
+      "type": "string",
+      "required": true
+    },
+    "contact": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "products": {
+      "type": "hasMany",
+      "model": "product",
+      "foreignKey": ""
+    },
+    "posters": {
+      "type": "hasMany",
+      "model": "poster",
+      "foreignKey": ""
+    },
+    "orders": {
+      "type": "hasMany",
+      "model": "order",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

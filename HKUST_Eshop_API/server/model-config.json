@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Shop": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "product": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "poster": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "order": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "coupon": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "orderItem": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "customer": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "comment": {
+    "dataSource": "MongoDB",
+    "public": true
+  }
+}

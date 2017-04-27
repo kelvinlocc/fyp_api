@@ -1,0 +1,772 @@
+<h1>SysUsers API:</h1>
+<div>
+<form action="/users/Userlogin" method="post">
+    <fieldset>
+        <h3>url: /users/Userlogin method: post</h3>
+        username: <input type="text" name="username" id="username" placeholder="string"><br>
+        password: <input type="text" name="password" id="password" placeholder="string"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<div>
+<form action="/users/Adminlogin" method="post">
+    <fieldset>
+        <h3>url: /users/Adminlogin method: post</h3>
+        username: <input type="text" name="username" id="username" placeholder="string"><br>
+        password: <input type="text" name="password" id="password" placeholder="string"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/users/register" method="post">
+    <fieldset>
+        <h3>url: /users/register method: post</h3>
+        username: <input type="text" name="username" id="username" placeholder="string"><br>
+        password: <input type="text" name="password" id="password" placeholder="string"><br>
+        email: <input type="text" name="email" id="email" placeholder="string"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<div>
+<form action="/users" method="get">
+    <fieldset>
+        <h3>url: /users method: get</h3>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/users/findUserByName" method="get">
+    <fieldset>
+        <h3>url: /users/findUserByName method: get</h3>
+        username: <input type="text" name="username" id="username" placeholder="string"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/users/findUserById" method="get">
+    <fieldset>
+        <h3>url: /users/findUserById method: get</h3>
+        user_id: <input type="text" name="user_id" id="user_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/users/findUserByShop" method="get">
+    <fieldset>
+        <h3>url: /users/findUserByShop method: get</h3>
+        shop_id: <input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/users/newUser" method="post">
+    <fieldset>
+        <h3>url: /users/newUser method: post</h3>
+        shop_id: <input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        username: <input type="text" name="username" id="username" placeholder="string"><br>
+        password: <input type="text" name="password" id="password" placeholder="string"><br>
+        email: <input type="text" name="email" id="email" placeholder="string"><br>
+        user_role: <input type="text" name="user_role" id="user_role" placeholder="shop_admin/staff"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/users/updateUser" method="post">
+    <fieldset>
+        <h3>url: /users/updateUser method: post</h3>
+        user_id: <input type="text" name="user_id" id="user_id" placeholder="number"><br>
+        username: <input type="text" name="username" id="username" placeholder="string"><br>
+        password: <input type="text" name="password" id="password" placeholder="string"><br>
+        email: <input type="text" name="email" id="email" placeholder="string"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<hr>
+<h1>Shops API:</h1>
+<div>
+<form action="/shops" method="get">
+    <fieldset>
+        <h3>url: /shops method: get</h3>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/shops/openImage" method="get">
+    <fieldset>
+        <h3>url: /shops/openImage method: get</h3>
+        shop_id:<input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/shops/findShopByName" method="get">
+    <fieldset>
+        <h3>url: /shops/findShopByName method: get</h3>
+        shop_name: <input type="text" name="shop_name" id="shop_name" placeholder="string"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/shops/findShopById" method="get">
+    <fieldset>
+        <h3>url: /shops/findShopById method: get</h3>
+        shop_id: <input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/shops/uploadShopImage" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <h3>url: /shops/uploadShopImage method: post</h3>
+            <label for="image_path">Shop image:</label>
+            <input type="file" name="image_path" id="image_path" accept="image/*">
+            <div class="col-xs-12">
+            </div>
+            <input type="submit">
+        </fieldset>
+</form>
+</div>
+<div>
+<form action="/shops/newShop" method="post">
+    <fieldset>
+        <h3>url: /shops/newShop method: post</h3>
+        shop_name: <input type="text" name="shop_name" id="shop_name" placeholder="string"><br>
+        opening_hours: <input type="text" name="opening_hours" id="opening_hours" placeholder="string"><br>
+        contact: <input type="text" name="contact" id="contact" placeholder="string"><br>
+        address: <input type="text" name="address" id="address" placeholder="string"><br>
+        image_path: <input type="text" name="image_path" id="image_path" placeholder="string"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/shops/updateShop" method="post">
+    <fieldset>
+        <h3>url: /shops/updateShop method: post</h3>
+        Shop ID: <input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        Shop name: <input type="text" name="shop_name" id="shop_name" placeholder="string"><br>
+        Opening hours: <input type="text" name="opening_hours" id="opening_hours" placeholder="string"><br>
+        contact: <input type="text" name="contact" id="contact" placeholder="string"><br>
+        address: <input type="text" name="address" id="address" placeholder="string"><br>
+        image_path: <input type="text" name="image_path" id="image_path" placeholder="string"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/shops/deleteShop" method="get">
+    <fieldset>
+        <h3>url: /shops/deleteShop method: get</h3>
+        shop_id: <input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<hr>
+<h1>Posters API:</h1>
+</div>
+<div>
+<form action="/posters/openImage" method="get">
+    <fieldset>
+        <h3>url: /posters/openImage method: get</h3>
+        poster_id:<input type="text" name="poster_id" id="poster_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/posters" method="get">
+    <fieldset>
+        <h3>url: /posters method: get</h3>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/posters/findPosterById" method="get">
+    <fieldset>
+        <h3>url: /posters/findPosterById method: get</h3>
+        poster_id: <input type="text" name="poster_id" id="poster_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/posters/findPosterByShop" method="get">
+    <fieldset>
+        <h3>url: /posters/findPosterByShop method: get</h3>
+        shop_id: <input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/posters/uploadPoster" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <h3>url: /posters/uploadPoster method: post</h3>
+            <label for="image_path">Poster image:</label>
+            <input type="file" name="image_path" id="image_path" accept="image/*">
+            <div class="col-xs-12">
+            </div>
+            <input type="submit">
+        </fieldset>
+</form>
+</div>
+<div>
+<form action="/posters/newPoster" method="post">
+    <fieldset>
+        <h3>url: /posters/newPoster method: post</h3>
+        shop_id: <input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        image_path: <input type="text" name="image_path" id="image_path" placeholder="string"><br>
+        publish_date: <input type="text" name="publish_date" id="publish_date" placeholder="string"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/posters/updatePoster" method="post">
+    <fieldset>
+        <h3>url: /posters/updatePoster method: post</h3>
+        poster_id: <input type="text" name="poster_id" id="poster_id" placeholder="number"><br>
+        shop_id: <input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        image_path: <input type="text" name="image_path" id="image_path" placeholder="string"><br>
+        publish_date: <input type="text" name="publish_date" id="publish_date" placeholder="string"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/posters/deletePoster" method="get">
+    <fieldset>
+        <h3>url: /posters/deletePoster method: get</h3>
+        poster_id: <input type="text" name="poster_id" id="poster_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<hr>
+<h1>News API:</h1>
+<div>
+<form action="/news" method="get">
+    <fieldset>
+        <h3>url: /news method: get</h3>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/news/findNewsById" method="get">
+    <fieldset>
+        <h3>url: /news/findNewsById method: get</h3>
+        news_id: <input type="text" name="news_id" id="news_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/news/findNewsByShop" method="get">
+    <fieldset>
+        <h3>url: /news/findNewsByShop method: get</h3>
+        shop_id: <input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/news/newNews" method="post">
+    <fieldset>
+        <h3>url: /news/newNews method: post</h3>
+        shop_id: <input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        description: <input type="text" name="description" id="description" placeholder="string"><br>
+        publish_date: <input type="text" name="publish_date" id="publish_date" placeholder="string"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/news/updateNews" method="post">
+    <fieldset>
+        <h3>url: /news/updateNews method: post</h3>
+        news_id: <input type="text" name="news_id" id="news_id" placeholder="number"><br>
+        shop_id: <input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        description: <input type="text" name="description" id="description" placeholder="string"><br>
+        publish_date: <input type="text" name="publish_date" id="publish_date" placeholder="string"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/news/deleteNews" method="get">
+    <fieldset>
+        <h3>url: /news/deleteNews method: get</h3>
+        news_id: <input type="text" name="news_id" id="news_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<hr>
+<h1>Products API:</h1>
+<div>
+<form action="/products/openImage" method="get">
+    <fieldset>
+        <h3>url: /products/openImage method: get</h3>
+        product_id:<input type="text" name="product_id" id="product_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/products" method="get">
+    <fieldset>
+        <h3>url: /products method: get</h3>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/products/findProductById" method="get">
+    <fieldset>
+        <h3>url: /products/findProductById method: get</h3>
+        product_id: <input type="text" name="product_id" id="product_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/products/findProductByName" method="get">
+    <fieldset>
+        <h3>url: /products/findProductByName method: get</h3>
+        product_name: <input type="text" name="product_name" id="product_name" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/products/findProductByShop" method="get">
+    <fieldset>
+        <h3>url: /products/findProductByShop method: get</h3>
+        shop_id: <input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/products/uploadProductImage" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <h3>url: /products/uploadProductImage method: post</h3>
+            <label for="image_path">Product image:</label>
+            <input type="file" name="image_path" id="image_path" accept="image/*">
+            <div class="col-xs-12">
+            </div>
+            <input type="submit">
+        </fieldset>
+</form>
+</div>
+<div>
+<form action="/products/newProduct" method="post">
+    <fieldset>
+        <h3>url: /products/newProduct method: post</h3>
+        shop_id: <input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        product_name: <input type="text" name="product_name" id="product_name" placeholder="string"><br>
+        image_path: <input type="text" name="image_path" id="image_path" placeholder="string"><br>
+        price: <input type="text" name="price" id="price" placeholder="number"><br>
+        description: <input type="text" name="description" id="description" placeholder="string"><br>
+        on_sale: <input type="text" name="on_sale" id="on_sale" placeholder="number: 1/0"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/products/updateProduct" method="post">
+    <fieldset>
+        <h3>url: /products/updateProduct method: post</h3>
+        shop_id: <input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        product_id: <input type="text" name="product_id" id="product_id" placeholder="number"><br>
+        product_name: <input type="text" name="product_name" id="product_name" placeholder="string"><br>
+        image_path: <input type="text" name="image_path" id="image_path" placeholder="string"><br>
+        price: <input type="text" name="price" id="price" placeholder="number"><br>
+        description: <input type="text" name="description" id="description" placeholder="string"><br>
+        on_sale: <input type="text" name="on_sale" id="on_sale" placeholder="number: 1/0"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/products/deleteProduct" method="get">
+    <fieldset>
+        <h3>url: /products/deleteProduct method: get</h3>
+        product_id: <input type="text" name="product_id" id="product_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<hr>
+<h1>Orders API</h1>
+<div>
+<form action="/orders" method="get">
+    <fieldset>
+        <h3>url: /orders method: get</h3>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/orders/findOrderById" method="get">
+    <fieldset>
+        <h3>url: /orders/findOrderById method: get</h3>
+        order_id: <input type="text" name="order_id" id="order_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/orders/findOrderByUser" method="get">
+    <fieldset>
+        <h3>url: /orders/findOrderByUser method: get</h3>
+        user_id: <input type="text" name="user_id" id="user_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/orders/findOrderByShop" method="get">
+    <fieldset>
+        <h3>url: /orders/findOrderByShop method: get</h3>
+        shop_id: <input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/orders/newOrder" method="post">
+    <fieldset>
+        <h3>url: /orders/newOrder method: post</h3>
+        shop_id: <input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        user_id: <input type="text" name="user_id" id="user_id" placeholder="number"><br>
+        status: <input type="text" name="status" id="status" placeholder="pending/confirmed/finished/deleted" size="30"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/orders/updateOrder" method="post">
+    <fieldset>
+        <h3>url: /orders/updateOrder method: post</h3>
+        order_id: <input type="text" name="order_id" id="order_id" placeholder="number"><br>
+        shop_id: <input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        user_id: <input type="text" name="user_id" id="user_id" placeholder="number"><br>
+        status: <input type="text" name="status" id="status" placeholder="pending/confirmed/finished/deleted" size="30"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/orders/deleteOrder" method="get">
+    <fieldset>
+        <h3>url: /orders/deleteOrder method: get</h3>
+        news_id: <input type="text" name="order_id" id="order_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<hr>
+<h1>OrderItems API:</h1>
+<div>
+<form action="/orderItems" method="get">
+    <fieldset>
+        <h3>url: /orderItems method: get</h3>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/orderItems/findOrderItemById" method="get">
+    <fieldset>
+        <h3>url: /orderItems/findOrderItemById method: get</h3>
+        item_id: <input type="text" name="item_id" id="item_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/orderItems/findOrderItemByOrder" method="get">
+    <fieldset>
+        <h3>url: /orderItems/findOrderItemByOrder method: get</h3>
+        order_id: <input type="text" name="order_id" id="order_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/orderItems/findOrderItemByProduct" method="get">
+    <fieldset>
+        <h3>url: /orderItems/findOrderItemByProduct method: get</h3>
+        product_id: <input type="text" name="product_id" id="product_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/orderItems/newOrderItem" method="post">
+    <fieldset>
+        <h3>url: /orderItems/newOrderItem method: post</h3>
+        order_id: <input type="text" name="order_id" id="order_id" placeholder="string"><br>
+        product_id: <input type="text" name="product_id" id="product_id" placeholder="string"><br>
+        quantity: <input type="text" name="quantity" id="quantity" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/orderItems/updateOrderItem" method="post">
+    <fieldset>
+        <h3>url: /orderItems/updateOrderItem method: post</h3>
+        item_id: <input type="text" name="item_id" id="item_id" placeholder="number"><br>
+        order_id: <input type="text" name="order_id" id="order_id" placeholder="string"><br>
+        product_id: <input type="text" name="product_id" id="product_id" placeholder="string"><br>
+        quantity: <input type="text" name="quantity" id="quantity" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/orderItems/deleteOrderItem" method="get">
+    <fieldset>
+        <h3>url: /orderItems/deleteOrderItem method: get</h3>
+        item_id: <input type="text" name="item_id" id="item_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<hr>
+<h1>Coupons API:</h1>
+<div>
+<form action="/coupons" method="get">
+    <fieldset>
+        <h3>url: /coupons method: get</h3>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/coupons/findCouponById" method="get">
+    <fieldset>
+        <h3>url: /coupons/findCouponById method: get</h3>
+        coupon_id: <input type="text" name="coupon_id" id="coupon_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/coupons/findCouponByUser" method="get">
+    <fieldset>
+        <h3>url: /coupons/findCouponByUser method: get</h3>
+        user_id: <input type="text" name="user_id" id="user_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/coupons/findCouponByIssueShop" method="get">
+    <fieldset>
+        <h3>url: /coupons/findCouponByIssueShop method: get</h3>
+        shop_id: <input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/coupons/findCouponByConsumedShop" method="get">
+    <fieldset>
+        <h3>url: /coupons/findCouponByConsumedShop method: get</h3>
+        shop_id: <input type="text" name="shop_id" id="shop_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/coupons/newCoupon" method="post">
+    <fieldset>
+        <h3>url: /coupons/newCoupon method: post</h3>
+        coupon_id: <input type="text" name="coupon_id" id="coupon_id" placeholder="number"><br>
+        issue_shop_id: <input type="text" name="issue_shop_id" id="issue_shop_id" placeholder="string"><br>
+        user_id: <input type="text" name="user_id" id="user_id" placeholder="string"><br>
+        description: <input type="text" name="description" id="description" placeholder="string"><br>
+        status: <input type="text" name="status" id="description" placeholder="string"><br>
+        discount_amount: <input type="text" name="discount_amount" id="disocunt_amount" placeholder="number"><br>
+        issue_date: <input type="text" name="issue_date" id="issue_date" placeholder="string"><br>
+        expire_date: <input type="text" name="expire_date" id="expire_date" placeholder="string"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/coupons/updateCoupon" method="post">
+    <fieldset>
+        <h3>url: /coupons/updateCoupon method: post</h3>
+        coupon_id: <input type="text" name="coupon_id" id="coupon_id" placeholder="number"><br>
+        issue_shop_id: <input type="text" name="issue_shop_id" id="issue_shop_id" placeholder="string"><br>
+        consumed_shop_id: <input type="text" name="consumed_shop_id" id="consumed_shop_id" placeholder="string"><br>
+        user_id: <input type="text" name="user_id" id="user_id" placeholder="string"><br>
+        description: <input type="text" name="description" id="description" placeholder="string"><br>
+        status: <input type="text" name="status" id="description" placeholder="string"><br>
+        discount_amount: <input type="text" name="discount_amount" id="disocunt_amount" placeholder="number"><br>
+        issue_date: <input type="text" name="issue_date" id="issue_date" placeholder="string"><br>
+        used_date: <input type="text" name="used_date" id="used_date" placeholder="string"><br>
+        expire_date: <input type="text" name="expire_date" id="expire_date" placeholder="string"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<hr>
+<h1> Comments API:</h1>
+<div>
+<form action="/comments" method="get">
+    <fieldset>
+        <h3>url: /comments method: get</h3>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/comments/findCommentById" method="get">
+    <fieldset>
+        <h3>url: /comments/findCommentById method: get</h3>
+        comment_id: <input type="text" name="comment_id" id="comment_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/comments/findCommentByUser" method="get">
+    <fieldset>
+        <h3>url: /comments/findCommentByUser method: get</h3>
+        user_id: <input type="text" name="user_id" id="user_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/comments/findCommentByProduct" method="get">
+    <fieldset>
+        <h3>url: /comments/findCommentByProduct method: get</h3>
+        product_id: <input type="text" name="product_id" id="product_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/comments/newComment" method="post">
+    <fieldset>
+        <h3>url: /comments/newComment method: post</h3>
+        product_id: <input type="text" name="product_id" id="product_id" placeholder="string"><br>
+        user_id: <input type="text" name="user_id" id="user_id" placeholder="string"><br>
+        description: <input type="text" name="description" id="description" placeholder="string"><br>
+        rating: <input tyep="text" name="rating" id="rating" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/comments/updateComment" method="post">
+    <fieldset>
+        <h3>url: /comments/updateComment method: post</h3>
+        comment_id: <input type="text" name="comment_id" id="comment_id" placeholder="number"><br>
+        product_id: <input type="text" name="product_id" id="product_id" placeholder="string"><br>
+        user_id: <input type="text" name="user_id" id="user_id" placeholder="string"><br>
+        description: <input type="text" name="description" id="description" placeholder="string"><br>
+        rating: <input tyep="text" name="rating" id="rating" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/comments/deleteComment" method="get">
+    <fieldset>
+        <h3>url: /comments/deleteComment method: get</h3>
+        comment_id: <input type="text" name="comment_id" id="comment_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<hr>
+<h1>UserProfiles API:</h1>
+<div>
+<form action="/userProfiles/getUserFavourites" method="get">
+    <fieldset>
+        <h3>url: /userProfiles/getUserFavourites method: get</h3>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/userProfiles/findUserFavouriteById" method="get">
+    <fieldset>
+        <h3>url: /userProfiles/findUserFavouriteById method: get</h3>
+        favour_id: <input type="text" name="favour_id" id="favour_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/userProfiles/findUserFavouritesByUser" method="get">
+    <fieldset>
+        <h3>url: /userProfiles/getUserFavouritesByUser method: get</h3>
+        user_id: <input type="text" name="user_id" id="user_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/userProfiles/findUserFavouritesByProduct" method="get">
+    <fieldset>
+        <h3>url: /userProfiles/getUserFavouritesByProduct method: get</h3>
+        product_id: <input type="text" name="product_id" id="product_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/userProfiles/getUserHistory" method="get">
+    <fieldset>
+        <h3>url: /userProfiles/getUserHistory method: get</h3>
+        user_id: <input type="text" name="user_id" id="user_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/userProfiles/newUserFavourite" method="post">
+    <fieldset>
+        <h3>url: /userProfiles/newUserFavourite method: post</h3>
+        poduct_id: <input type="text" name="product_id" id="product_id" placeholder="number"><br>
+        user_id: <input type="text" name="user_id" id="user_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>
+<div>
+<form action="/userProfiles/deleteUserFavourite" method="get">
+    <fieldset>
+        <h3>url: /userProfiles/deleteUserFavourite method: get</h3>
+        poduct_id: <input type="text" name="product_id" id="product_id" placeholder="number"><br>
+        user_id: <input type="text" name="user_id" id="user_id" placeholder="number"><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</div>

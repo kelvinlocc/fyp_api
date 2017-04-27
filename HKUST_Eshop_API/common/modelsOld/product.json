@@ -1,0 +1,50 @@
+{
+  "name": "product",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "product_code": {
+      "type": "string",
+      "required": true
+    },
+    "product_name": {
+      "type": "string",
+      "required": true
+    },
+    "product_image": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "number",
+      "required": true
+    },
+    "shop_id": {
+      "type": "string",
+      "required": true
+    },
+    "on_sale": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "shop": {
+      "type": "belongsTo",
+      "model": "Shop",
+      "foreignKey": ""
+    },
+    "comments": {
+      "type": "hasMany",
+      "model": "comment",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

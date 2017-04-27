@@ -1,0 +1,32 @@
+{
+  "name": "poster",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "poster_id": {
+      "type": "string",
+      "required": true
+    },
+    "shop_id": {
+      "type": "string",
+      "required": true
+    },
+    "poster": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "shop": {
+      "type": "belongsTo",
+      "model": "Shop",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
